@@ -5,13 +5,13 @@ function deposit(){
     depositAmount=Number(depositAmount)
     if(depositAmount>0){
         balanceAmount+=depositAmount
-         document.getElementById("depos").value=""
+        document.getElementById("depos").value=""
     }else{
         alert('enter a valid amound')
         document.getElementById("depos").value=""
     }
 }
-function withdraw(){
+ function withdraw(){
     withdrawAmount=document.getElementById("withd").value
 withdrawAmount=Number(withdrawAmount)
 if(withdrawAmount>0 && balanceAmount>=withdrawAmount){
